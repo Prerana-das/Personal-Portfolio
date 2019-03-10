@@ -1,0 +1,811 @@
+/*===========================================
+    CSS INDEX
+    =========================================
+
+    1. Common CSS
+    2. header area css
+    3. header promo area css
+    4. about area css
+    5. portfolio area css
+	6. services area css
+	7. pricing area css
+    8. testimonial area css
+	9. team area css
+    10. contact area css
+    11. footer area css
+    11. index2 css
+	13. promodemo1 css
+   
+	*/
+/*--------------------------
+ 1. Common css
+ ----------------------------*/
+html,body{
+	height:100%;
+	width:100%;
+	font-size:14px;
+	line-height:1.4;
+	color:#333;
+	font-family: 'Poppins', sans-serif;
+}
+a:focus{
+	outline: 0 solid; 
+	}
+img {
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+	color:#2b383c;
+}
+h4{
+	font-size:18px;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style:none
+}
+p{
+	font-size:15px;
+	font-weight:300;
+	color: #787d85;
+	line-height:28px;
+}
+a{
+	color:#333132;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: none; 
+}
+
+a.border-btn, a.block-btn , input.block-btn{
+	display:inline-block;
+	padding: 10px 36px;
+	text-transform: capitalize;
+	background-color: transparent;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	border: 1px solid #fff;
+	border-radius: 21px;
+	transition:.5s;
+}
+a.block-btn, input.block-btn{
+	background-image: linear-gradient(to right, #00C6FB , #005CEA);
+}
+a.border-btn:hover, a.block-btn:hover, input.block-btn:hover{
+	background-image: linear-gradient(to left, #00C6FB , #005CEA);
+	border-color:transparent;
+}
+.bg-overlay{
+	position:relative;
+}
+.bg-overlay::before, .single-portfolio::before{
+	position:absolute;
+	content:"";
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background-image: linear-gradient(to right, #00C6FB , #005CEA);
+	opacity:.8;
+	z-index:1;
+}
+.toggle-menu{
+	display:none;
+}
+.section-title{
+	padding-bottom:70px;
+}
+.section-title h2{
+	font-size:40px;
+	position:relative;
+}
+.section-title h2::before {
+	position: absolute;
+	content: "";
+	width: 45px;
+	height: 1px;
+	background-color: #000;
+	left: 50%;
+	bottom: -15px;
+	transform: translateX(-50%);
+}
+.section-title h2::after{
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 1px;
+	background-color: #000;
+	left: 50%;
+	bottom: -20px;
+	transform: translateX(-50%);
+	
+}
+
+/*--------------------------
+ 2. header area css
+ ----------------------------*/
+.header-area{
+	padding:20px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background-color:transparent;
+}
+.main-nav{}
+.logo {
+}
+.logo_black {
+	margin-top: 12px;
+}
+.header-area1 .logo_black {
+	display: none;
+}
+.header-area2.logo_black{
+	display:block;
+}
+.logo img{
+	margin-top:10px;
+	max-width:100%;
+}
+.main-menu{
+}
+.main-menu ul li{
+	display:inline-block;
+}
+.main-menu ul li a {
+	display: inline-block;
+	padding: 10px 20px;
+	color:#fff;
+	font-size:16px;
+	position:relative;
+	transition:.5s;
+}
+.main-menu ul li a::before , .portfolio-menu li::before{
+	position: absolute;
+	width: 70%;
+	height: 1px;
+	background-color: #fff;
+	left: 15%;
+	top: 50%;
+	content: "";
+	transform: rotate(-10deg);
+	transition:.5s;
+	opacity:0;
+}
+.main-menu ul li a:hover::before, .portfolio-menu li:hover::before{
+	opacity:1;
+}
+header.sticky {
+	position: fixed;
+	padding: 20px 0px;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+header.sticky .main-menu ul li a{
+	color:#2b383c;	
+}
+.header-area1.logo{
+	display:none;
+}
+header.sticky .logo{
+	display:none;
+}
+header.sticky .logo_black{
+	display:block;
+}
+
+/*--------------------------
+ 3. header promo area css
+ ----------------------------*/
+.header-promo{
+	background-image:url('img/Img-Base7.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:cover;
+	height:100%;
+	position:relative;
+}
+.promo-info {
+	position: absolute;
+	color: #fff;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 11;
+}
+.promo-info h3 {
+	font-size: 40px;
+	font-weight: 400;
+	color:#fff;
+}
+.promo-info h1{
+	font-size:65px;
+	color:#fff;
+}
+.promo-info a{
+	margin-top:15px;
+}
+
+
+/*--------------------------
+ 4. about area css
+ ----------------------------*/
+ .about-area, .portfolio-area, .service-area,.pricing-area, .testimonial-area, .team-area,.contact-area{
+	 padding:100px 0px;
+ }
+ .about-left{
+	 padding-right:20px;
+ }
+ .about-info{}
+ .about-info h4{
+	 font-size:28px;
+ }
+.about-info h6 {
+	color: #a09d9d;
+	font-size: 19px;
+	margin-bottom: 30px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+ .about-info p{}
+.skil-progress {
+	margin-top: 30px;
+}
+ .skil-progress .barfiller {
+	height: 10px;
+	border: 3px solid #ccc;
+}
+.single-skill{
+}
+.single-skill h5{
+	font-size:14px;
+}
+.about-img{}
+.about-img img{
+	max-width:100%;
+}
+.about-right-side{
+	margin-top:30px;
+}
+.single-item {
+	border: 1px solid #D8D8D8;
+	text-align: center;
+	padding: 30px 4px;
+	transition:.7s;
+	display:block;
+	position:relative;
+}
+.single-item::before{
+	position:absolute;
+	content:"";
+	width:100%;
+	height:100%;
+	background-image: linear-gradient(to right, #00C6FB , #005CEA);
+	top:0;
+	left:0;
+	opacity:0;
+	z-index:-1;
+	transition:.7s;
+}
+.single-item i{
+	font-size:32px;
+	color:#00c6fb;
+}
+.single-item h4{
+	font-size:18px;
+	text-transform:uppercase;
+	margin-top:10px;
+}
+.single-item:hover::before{	
+	border-color:trabsparent;
+	opacity:1;
+}
+.single-item:hover i, .single-item:hover h4{
+	color:#fff;
+}
+
+ 
+
+ /*--------------------------
+ 5. portfolio area css
+ ----------------------------*/
+.portfolio-area{
+	background-color:#f5f5f6;
+}
+.portfolio-area .section-title{
+	padding-bottom:40px;
+}
+.portfolio-menu{
+	padding-bottom:30px;
+}
+.portfolio-menu li{
+	display:inline-block;
+	cursor:pointer;
+	padding:10px;
+	text-transform:uppercase;
+}
+.portfolio-menu li{
+	position:relative;
+}
+.portfolio-menu li::before{
+	background-color: #2b383c;
+}
+.portfolio-menu li a:hover{
+	color: #2b383c;
+}
+.all-portfolio{}
+.portfolio-gallery{}
+.grid-item{
+	margin-bottom:30px;
+}
+.single-portfolio{
+	position:relative;
+	transition:.6s;
+	text-align:center;
+}
+.single-portfolio img {
+	width: 100%;
+}
+.single-portfolio::before{
+	visibility:hidden;
+	opacity:1;
+	width:100%;
+}
+.single-portfolio:hover::before{
+	visibility:visible;
+	opacity:.8;
+}
+.portfolio-effect{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+}
+.portfolio-effect i{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border:1px solid #fff;
+	color:#fff;
+	border-radius:50%;
+	margin-right:5px;
+	font-size: 14px;
+	transition:.7s;
+	opacity:0;
+	visibility:hidden;
+}
+.single-portfolio:hover .portfolio-effect i{
+	visibility:visible;
+	opacity:1;
+}
+
+/*--------------------------
+ 6. service area css
+ ----------------------------*/
+ .service-area{}
+ .all-services{}
+ .single-service{}
+ .service-img{
+	 width:70px;
+	 float:left;
+ }
+ .service-img img{
+	 max-width:100%;
+ }
+ .service-content{
+	 width:280px;
+	 float:left;
+	 margin-bottom:40px;
+ }
+ .service-content h3{
+	 font-size:18px;
+ }
+ .service-content p{
+	 font-size:14px;
+ }
+ 
+ 
+ /*--------------------------
+ 7. pricing area css
+ ----------------------------*/
+ .pricing-area{
+	 background-color:#f5f5f6;
+ }
+ .single-pricing {
+	text-align: center;
+	background-color: #fff;
+	padding: 45px 10px;
+	border-radius: 7px;
+}
+ .single-pricing h4{}
+.single-pricing h3 {
+	font-size: 74px;
+	position: relative;
+	padding-bottom: 15px;
+}
+ .single-pricing h3 sup {
+	font-size: 24px;
+	top: -40px;
+}
+.single-pricing h3::before{
+	position:absolute;
+	content:"";
+	width:100px;
+	height:1px;
+	background-color:#00c6fb;
+	bottom:0px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.single-pricing h3::after{
+	position:absolute;
+	content:"";
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#fff;
+	border:2px solid #00c6fb;
+	bottom:0px;
+	left: 50%;
+	top:100%;
+	transform: translate(-50%,-50%);
+}
+ .single-pricing ul{
+	 padding: 15px 0px;
+ }
+ .single-pricing ul li{
+	 margin-bottom:10px;
+ }
+ .single-pricing i {
+	color: #44dcb0;
+	font-size: 12px;
+	margin-right:7px;
+}
+ .single-pricing a{}
+ 
+ 
+/*--------------------------
+ 8. testimonial area css
+ ----------------------------*/
+ .testimonial-area{
+ }
+ .testimonial{}
+ .single-testimonial{
+	 text-align:center;
+ }
+.testimonial .owl-dots{
+	position: absolute;
+	left: 50%;
+	bottom: -55px;
+	transform: translateX(-50%);
+}
+.testimonial .owl-dot {
+	width: 14px;
+	height: 14px;
+	border-radius:50%;
+	background-color:#adb0b6;
+	border:2px solid #adb0b6;
+	display: inline-block;
+	margin: 0px 8px 0px 0px;
+}
+.testimonial .active {
+	background-color:transparent;
+	border-color:#00c6fb;
+}
+ .testimonial-img{
+	  width:120px;
+	  margin:0 auto;
+	
+ }
+ .testimonial-img img{
+	  border-radius:50%;
+ }
+ .single-testimonial h4{
+	 margin:20px 0px 10px 0px;
+ }
+.single-testimonial span {
+	color: #9f9f9f;
+	font-size: 14px;
+	margin-bottom: 30px;
+	display: block;
+}
+.single-testimonial i {
+	color: #ffd700;
+	font-size: 13px;
+	margin-right:5px;
+}
+ .single-testimonial p{}
+ 
+ 
+ /*--------------------------
+ 9. team area css
+ ----------------------------*/
+ .team-area{
+	 background-color:#f5f5f6;
+ }
+ .team-member {
+	border: 1px solid #00c6fb;
+	padding: 24px 0px 24px 24px;
+}
+ .team-img{}
+ .team-img img{
+	max-width:100%;
+ }
+ .team-content{}
+.team-content h4 {
+	margin: 15px 0px 7px 0px;
+}
+ .team-content span{
+	 color:#9f9f9f;
+	 font-size:15px;
+ }
+ .team-content ul{
+	 margin-top:15px;
+ } 
+ .team-content ul li{
+	display:inline-block;
+	margin-right:4px;
+ }
+.team-content ul li a{
+	 display:inline-block;
+	 width:22px;
+	 height:22px;
+	 line-height:22px;
+	 border-radius:50%;
+	 text-align:center;
+	 font-size: 10px;
+	 border:1px solid #00c6fb;	
+ }
+.team-content ul li:nth-child(1) a{
+  color: #3b5999;
+}
+.team-content ul li:nth-child(2) a{
+  color: #55acee;
+}
+.team-content ul li:nth-child(3) a{
+  color: #25D366;
+}
+.team-content ul li:nth-child(4) a{
+  color: #0077B5;
+}
+ 
+ 
+/*--------------------------
+ 10. contact area css
+ ----------------------------*/
+ .contact-area{}
+ .contact-info{
+	 padding: 0px 10px;
+ }
+ .contact-info ul{}
+.contact-info ul li {
+	margin-bottom: 10px;
+	line-height: 1.7;
+}
+ .contact-info ul li a{}
+ ul.social-link{
+	 margin-top:30px;
+ }
+ .social-link li{
+	 display:inline-block; 
+ }
+ .social-link li a{
+	 display:inline-block; 
+	 margin-right:15px;
+ }
+ .social-link li:nth-child(1) a{
+	color: #3b5999; 
+  }
+  .social-link li:nth-child(2) a{
+	color: #55acee;
+  }
+  .social-link li:nth-child(3) a{
+	color: #e4405f; 
+  }
+  .social-link li:nth-child(4) a{
+	 color: #0077B5;
+  }
+ .social-link li:nth-child(5) a{
+	color: #ea4c89; 
+ }
+ .contact-form{}
+.contact-form input[type="text"], .contact-form input[type="email"] {
+	padding: 10px 18px;
+	background-color: #ebebeb;
+	border-radius: 21px;
+	border: none;
+}
+.contact-form input[type="text"]{
+	margin-right:5px;
+}
+.contact-form textarea {
+	border: none;
+	border-bottom: 1px solid teal;
+	width: 100%;
+	margin: 30px 0px;
+}
+ .contact-form h3{}
+ 
+ 
+ /*--------------------------
+ 11. footer area css
+ ----------------------------*/
+ .footer-area{
+	 background-color:#f5f5f6;
+	 padding:34px 0px;
+ }
+ .footer-content{}
+ .footer-content p i{
+	 color:#e73e28;
+ }
+ .footer-content p{
+	 margin-bottom:0px;
+	 font-size:14px;
+ }
+ 
+ /*--------------------------
+ 12. Index2
+ ----------------------------*/
+.header-promo2 .promo-info h1,.header-promo2 .promo-info h3,.header-area2 .main-menu ul li a{
+	color:#2b383c;
+}
+.header-area2 .main-menu ul li a::before{
+	background-color: #2b383c;
+}
+.header-promo2{
+	background-color:#f5f5f5;
+	height:100%;
+	position:relative;
+}
+.header-promo2 ul{
+	position:relative;
+	margin-left:50px;
+}
+.header-promo2 ul::before {
+	position: absolute;
+	content: "";
+	width: 38px;
+	height: 2px;
+	background-color: #2a373c;
+	left: -46px;
+	top: 70%;
+	transform: translateY(-50%);
+}
+.header-promo2 .social-link li a{
+	color: #2a373c;
+}
+
+
+.about-us{
+	margin-top:40px;
+}
+.single-about img{
+	max-width:60px;
+}
+.single-about h3 {
+	font-size: 22px;
+	margin: 15px 0px 30px;
+	position:relative;
+	font-weight:400;
+}
+.single-about h3::before {
+	position: absolute;
+	content: "";
+	width: 70px;
+	height: 2px;
+	background-color: #00c6fb;
+	bottom: -12px;
+	left: 0;
+}
+
+.cta-area{
+	background-image:url('img/Img-Base31.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size:cover;
+	height:50vh;
+	position:relative;
+}
+.cta-content {
+	padding:140px 0px;
+}
+.cta-content h2{
+	color:#fff;
+}
+.cta-content a{
+	display:inline-block;
+	padding:10px 20px;
+	border:1px solid #fff;
+	color:#fff;
+}
+
+.single-team{
+	position:relative;
+}
+.single-team .team-img{}
+.single-team .team-content {
+	background-color: #fff;
+	width: 212px;
+	padding: 30px 20px;
+	position: absolute;
+	top: 34%;
+	right: 0;
+}
+.team-content p{
+	margin-top:20px;
+	color: #00c6fb;
+	position:relative;
+}
+.team-content p::before {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #00c6fb;
+	top: -5px;
+	left: 0;
+}
+.team-social {
+	position: absolute;
+	top: 126px;
+	right: 13px;
+}
+.team-social li{  
+	margin-bottom:7px;
+}
+
+ /*--------------------------
+ 13. promodemo1 css
+ ----------------------------*/
+.promo-single{
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center;
+	height:100vh;
+	position:relative;
+}
+.bg1{
+	background-image:url('img/img-base6.jpg');
+}
+.bg2{
+	background-image:url('img/img-base6.jpg');
+}
+.bg3{
+	background-image:url('img/img-base6.jpg');
+}
+.slider .owl-dots {
+	position: absolute;
+	left: 9%;
+	bottom:100px;
+}
+.slider .owl-dot {
+	width: 12px;
+	height: 12px;
+	border-radius:50%;
+	background-color:#d0d0d0;
+	border:2px solid #d0d0d0;
+	display: inline-block;
+	margin: 0px 8px 0px 0px;
+}
+.slider .active {
+	background-color:#00c6fb;
+	border-color:#fff;
+}
+.slider .promo-info{
+	left: 9%;
+}
+
+ 
